@@ -30,10 +30,10 @@
 
 	<!-- MAIN -->
 	<div class="l-main">
-				<div class="l-submain wpb_row full_width full_height" style="padding-top: 150px;"><div class="l-submain-h g-html i-cf"><div class="g-cols wpb_row offset_default"><div class="full-width">
-<!-- Video incorporado do YouTube -->
-<div id="video-bg" style="position:relative; width:100vw; height:56.25vw; overflow:hidden;">
- 
+				<div class="l-submain wpb_row full_width full_height" style="padding-top: 150px;"><div class="l-submain-h g-html i-cf"><div class="g-cols wpb_row offset_default">
+<div class="full-width">
+  <!-- Video incorporado do YouTube -->
+  <div id="video-bg" style="position:relative; width:100vw; height:56.25vw; overflow:hidden;"></div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -43,15 +43,19 @@
   $(document).ready(function() {
     $("#video-bg").YTPlayer({
       videoURL: 'https://www.youtube.com/watch?v=YCLUHQDMqdY',
-      containment: 'body',
+      containment: '#video-bg',  // importante: o próprio container
       autoPlay: true,
       mute: true,
       showControls: false,
       optimizeDisplay: true,
       ratio: 'auto',
+      loop: true,
+      quality: 'highres'
     });
   });
 </script>
+
+
 </div></div></div></div><div class="l-submain wpb_row"><div class="l-submain-img" style="background-image: none;"></div><div class="l-submain-h g-html i-cf"><div class="g-cols wpb_row offset_default"><div class="full-width"><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
 
 
