@@ -17,7 +17,7 @@ body {
   width: 120vw;
   height: 61.875vw;
   overflow: hidden;
-  margin-left: calc(-60vw + 50%);
+  margin-left: calc(-50vw + 50%);
 }
 
 .video-bg iframe {
