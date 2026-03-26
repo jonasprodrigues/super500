@@ -33,13 +33,25 @@
 				<div class="l-submain wpb_row full_width full_height" style="padding-top: 150px;"><div class="l-submain-h g-html i-cf"><div class="g-cols wpb_row offset_default"><div class="full-width">
 <!-- Video incorporado do YouTube -->
 <div class="video-bg" style="position:relative; width:100vw; height:56.25vw; overflow:hidden;">
-  <iframe 
-    src="https://www.youtube.com/embed/YCLUHQDMqdY?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&loop=1&playlist=YCLUHQDMqdY&rel=0" 
-    frameborder="0" 
-    allow="autoplay; fullscreen" 
-    allowfullscreen>
-  </iframe>
+ 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("#youtube-bg").YTPlayer({
+      videoURL: 'https://www.youtube.com/watch?v=WBm0y1bC_ZE',
+      containment: 'body',
+      autoPlay: true,
+      mute: true,
+      showControls: false,
+      optimizeDisplay: true,
+      ratio: 'auto',
+    });
+  });
+</script>
 </div></div></div></div><div class="l-submain wpb_row"><div class="l-submain-img" style="background-image: none;"></div><div class="l-submain-h g-html i-cf"><div class="g-cols wpb_row offset_default"><div class="full-width"><div class="vc_empty_space" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
 
 
