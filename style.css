@@ -14,7 +14,7 @@ body {
 
 .video-bg {
   position: relative;
-  width: 110vw;
+  width: 120vw;
   height: 61.875vw;
   overflow: hidden;
   margin-left: calc(-55vw + 50%);
@@ -24,7 +24,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 110vw;
+  width: 120vw;
   height: 61.875vw;
   border: none;
 }
