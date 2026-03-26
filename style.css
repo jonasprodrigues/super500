@@ -1,0 +1,174 @@
+/* Basic styles for the SUPER 500 website */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    background-color: #f4f4f4;
+}
+
+.l-canvas {
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Header Styles */
+.custom-header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.logo-container img {
+    max-height: 120px;
+    width: auto;
+}
+
+.nav-container {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-container a {
+    transition: all 0.3s ease;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.nav-container a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    border-radius: 0;
+}
+
+/* Main Content */
+.l-main {
+    width: 100%;
+}
+
+.l-submain {
+    position: relative;
+    width: 100%;
+}
+
+.w-nav {
+    background-color: #920001;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.w-nav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.w-nav nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.w-nav nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.w-nav nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.l-submain full_width full_height {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.w-portfolio {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.w-portfolio h2 {
+    color: #004d26;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.w-portfolio-item {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.w-portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.w-portfolio-item h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.w-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.w-footer p {
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-container a {
+        font-size: 12px;
+    }
+
+    .logo-container img {
+        max-height: 80px;
+    }
+
+    .w-portfolio-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .custom-header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+        text-align: center;
+    }
+}
