@@ -12,23 +12,24 @@ body {
     background-color: #f4f4f4;
 }
 .video-bg {
-  position: fixed;       /* ocupa toda a tela */
+  position: fixed;       /* ocupa a tela inteira */
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 56.25vw;       /* altura 16:9 proporcional à largura */
+  width: 100%;           /* largura total */
+  height: 100%;          /* altura total */
   overflow: hidden;
-  z-index: -1;           /* atrás do conteúdo */
+  z-index: -1;           /* fica atrás do conteúdo */
 }
 
 .video-bg iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  width: 177.78%;        /* 100 * 16/9 = 177.78% para cobrir a altura */
   height: 100%;
+  transform: translate(-50%, -50%); /* centraliza */
   border: none;
-  pointer-events: none;  /* evita clique */
+  pointer-events: none;  /* desabilita cliques */
 }
 
 .l-canvas {
