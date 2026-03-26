@@ -11,25 +11,22 @@ body {
     font-weight: 300;
     background-color: #f4f4f4;
 }
+
 .video-bg {
-  position: fixed;       /* ocupa a tela inteira */
-  top: 0;
-  left: 0;
-  width: 100%;           /* largura total */
-  height: 100%;          /* altura total */
+  position: relative;
+  width: 120vw;
+  height: 61.875vw;
   overflow: hidden;
-  z-index: -1;           /* fica atrás do conteúdo */
+  margin-left: calc(-60vw + 50%);
 }
 
 .video-bg iframe {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 177.78%;        /* 100 * 16/9 = 177.78% para cobrir a altura */
-  height: 100%;
-  transform: translate(-50%, -50%); /* centraliza */
+  top: 0;
+  left: 0;
+  width: 120vw;
+  height: 61.875vw;
   border: none;
-  pointer-events: none;  /* desabilita cliques */
 }
 
 .l-canvas {
