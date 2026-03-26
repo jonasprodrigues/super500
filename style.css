@@ -12,6 +12,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/*
 #video-bg {
   position: fixed;
   top: 0;
@@ -20,6 +21,7 @@ body {
   height: 100%;
   z-index: -1;
 }
+*/
 
 #video-bg iframe {
     pointer-events: none !important;
