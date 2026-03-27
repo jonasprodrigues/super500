@@ -207,7 +207,7 @@ body {
 
     .custom-header {
         flex-direction: column;
-        height: 500px;
+        height: 30vh;
         padding: 15px;
         gap: 15px;
         text-align: center;
