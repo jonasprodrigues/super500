@@ -23,8 +23,23 @@ body {
 }
 */
 
-#video-bg iframe {
-    pointer-events: none !important;
+.video-bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: calc(-50vw + 50%);
+}
+
+.video-bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.78vh;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  border: none;
+  pointer-events: none !important;
 }
 
 .l-canvas {

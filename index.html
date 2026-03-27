@@ -33,26 +33,14 @@
 				<div class="l-submain wpb_row full_width full_height" style="padding-top: 150px;"><div class="l-submain-h g-html i-cf"><div class="g-cols wpb_row offset_default">
 <div class="full-width">
   <!-- Video incorporado do YouTube -->
-  <div id="video-bg" style="position:relative; width:100vw; height:136.25vw; overflow:hidden;"></div>
+  <div id="video-bg" class="video-bg">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/YCLUHQDMqdY?autoplay=1&mute=1&loop=1&playlist=YCLUHQDMqdY&controls=0&rel=0&modestbranding=1"
+      frameborder="0"
+      allow="autoplay; fullscreen; encrypted-media"
+      allowfullscreen></iframe>
+  </div>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    $("#video-bg").YTPlayer({
-      videoURL: 'https://www.youtube.com/watch?v=YCLUHQDMqdY',
-      containment: '#video-bg',  // importante: o próprio container
-      autoPlay: true,
-      mute: true,
-      showControls: false,
-      optimizeDisplay: true,
-      ratio: 'auto',
-      loop: true,
-      quality: 'highres'
-    });
-  });
 </script>
 
 
