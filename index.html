@@ -345,7 +345,7 @@
 <script src="https://jbmartefatos.com.br/wp-content/themes/JBM-Artefatos/js/fotorama.js?ver=4.3.34"></script>
 <script>
   $(function () {
-    $('.fotorama').fotorama({
+    var $fotoramaDiv = $('.fotorama').fotorama({
       loop: true,
       autoplay: 2000,
       nav: false,
@@ -354,6 +354,15 @@
       ratio: '1:1',
       transition: 'crossfade'
     });
+
+    var fotorama = $fotoramaDiv.data('fotorama');
+
+    // Script adicional de transição manual a cada 2s
+    setInterval(function () {
+      if (fotorama) {
+        fotorama.show('>');
+      }
+    }, 2000);
   });
 </script>
 </body>
