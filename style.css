@@ -26,23 +26,31 @@ body {
 .video-bg {
   position: relative;
   width: 100vw;
-  /* Altura proporcional: desktop 125vh, mobile 20vh */
-  height: calc(20vh + (105 * ((100vw - 320px) / 1600)));
+  height: 125vh;
   overflow: hidden;
   margin-left: calc(-50vw + 50%);
 }
 
-/* Iframe proporcional dentro do video-bg */
 .video-bg iframe {
   position: absolute;
   top: 0;
   left: 50%;
-  width: calc(100vw + 10%);  /* um pouco maior para cobrir possíveis margens */
-  /* altura proporcional: sempre maior que container para cobrir todo fundo */
-  height: calc(20vh + (120 * ((100vw - 320px) / 1600)));
+  width: 110vw;
+  height: 140vh;
   transform: translateX(-50%);
   border: none;
   pointer-events: none !important;
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .video-bg {
+    height: 50vh;
+  }
+
+  .video-bg iframe {
+    height: 20vh;
+  }
 }
 
 .l-canvas {
