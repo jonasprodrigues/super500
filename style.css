@@ -33,11 +33,11 @@ body {
 
 .video-bg iframe {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   width: 110vw;
   height: 120vh;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   border: none;
   pointer-events: none !important;
 }
