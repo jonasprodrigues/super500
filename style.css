@@ -31,6 +31,25 @@ body {
   margin-left: calc(-50vw + 50%);
 }
 
+/* Ajuste progressivo para tablets e mobile */
+@media (max-width: 1024px) {
+  .video-bg {
+    height: 100vh; /* altura intermediária */
+  }
+}
+
+@media (max-width: 768px) {
+  .video-bg {
+    height: 75vh;  /* tablets menores ou telas grandes de celular */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-bg {
+    height: 50vh;  /* mobile pequeno */
+  }
+}
+
 .video-bg iframe {
   position: absolute;
   top: 0;
