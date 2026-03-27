@@ -123,6 +123,7 @@ body {
 .header-menu-icon {
     width: 100%;
     height: 100%;
+    top: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -291,7 +292,7 @@ body {
 
     .custom-header {
         flex-direction: column;
-        height: 30vh !important;
+        height: 10vh !important;
         padding: 15px;
         gap: 15px;
         text-align: center;
