@@ -341,7 +341,21 @@
     if (e.target === mobileMenuModal) closeMenu();
   });
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJ+ZZFlEXb0dAVcNfGvSU3I+Y1gI4Jc2JSw6k=" crossorigin="anonymous"></script>
 <script src="https://jbmartefatos.com.br/wp-content/themes/JBM-Artefatos/js/fotorama.js?ver=4.3.34"></script>
+<script>
+  $(function () {
+    $('.fotorama').fotorama({
+      loop: true,
+      autoplay: 2000,
+      nav: false,
+      width: '100%',
+      height: '100%',
+      ratio: '1:1',
+      transition: 'crossfade'
+    });
+  });
+</script>
 </body>
 </html>
 

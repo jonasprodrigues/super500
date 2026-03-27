@@ -326,6 +326,8 @@ body {
   min-height: 520px;
   padding: 70px 20px;
   background: url('assets/fundo1.jpg') no-repeat center/cover;
+  background-attachment: fixed;
+  background-size: cover;
   color: #fff;
   overflow: hidden;
 }
@@ -359,18 +361,21 @@ body {
 }
 
 .section-fotorama-left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  position: relative;
   width: 40%;
-  min-width: 300px;
+  min-width: 260px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
 }
 
 .fotorama-circle {
-  position: relative;
-  width: min(300px, 75vw);
-  height: min(300px, 75vw);
-  margin-left: 15vw;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(420px, 80vw);
+  height: min(420px, 80vw);
   border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.55);
   background: rgba(255, 255, 255, 0.12);
