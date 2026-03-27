@@ -215,13 +215,17 @@ body {
     }
 }
 
+/* Menu flex quebrando em mobile */
 @media (max-width: 480px) {
   .nav-container {
-    gap: 10px !important; /* reduz a distância entre os links */
-    font-size: 14px; /* opcional: reduz também o tamanho da fonte para caber melhor */
+    flex-wrap: wrap;       /* permite quebrar para múltiplas linhas */
+    gap: 10px;             /* horizontal e vertical */
+    row-gap: 5px;          /* reduz distância vertical entre linhas */
+    justify-content: center;
   }
 
   .nav-container a {
-    font-size: 14px; /* garante que os links fiquem menores no mobile */
+    font-size: 14px;       /* opcional: reduz o tamanho da fonte */
+    line-height: 1.2;      /* reduz espaçamento interno da linha */
   }
 }
