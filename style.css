@@ -26,36 +26,20 @@ body {
 .video-bg {
   position: relative;
   width: 100vw;
-  height: 125vh;
+  /* Altura proporcional: desktop 125vh, mobile 20vh */
+  height: calc(20vh + (105 * ((100vw - 320px) / 1600)));
   overflow: hidden;
   margin-left: calc(-50vw + 50%);
 }
 
-/* Ajuste progressivo para tablets e mobile */
-@media (max-width: 1024px) {
-  .video-bg {
-    height: 100vh; /* altura intermediária */
-  }
-}
-
-@media (max-width: 768px) {
-  .video-bg {
-    height: 15vh;  /* tablets menores ou telas grandes de celular */
-  }
-}
-
-@media (max-width: 480px) {
-  .video-bg {
-    height: 10vh;  /* mobile pequeno */
-  }
-}
-
+/* Iframe proporcional dentro do video-bg */
 .video-bg iframe {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 110vw;
-  height: 140vh;
+  width: calc(100vw + 10%);  /* um pouco maior para cobrir possíveis margens */
+  /* altura proporcional: sempre maior que container para cobrir todo fundo */
+  height: calc(20vh + (120 * ((100vw - 320px) / 1600)));
   transform: translateX(-50%);
   border: none;
   pointer-events: none !important;
