@@ -50,7 +50,7 @@ body {
 
   .video-bg iframe {
     top: 0;
-    height: 43vh;
+    height: 38vh;
   }
 }
 
@@ -217,7 +217,7 @@ body {
 
 @media (max-width: 480px) {
   .nav-container {
-    gap: 10px; /* reduz a distância entre os links */
+    gap: 10px !important; /* reduz a distância entre os links */
     font-size: 14px; /* opcional: reduz também o tamanho da fonte para caber melhor */
   }
 
