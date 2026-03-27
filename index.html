@@ -16,7 +16,7 @@
 		<div class="logo-container" style="flex-shrink: 0;">
 			<img src="assets/logo.png" alt="SUPER 500" style="height: 120px; width: auto;">
 		</div>
-		<nav class="nav-container" style="display: flex; gap: 25px; flex: 1; justify-content: center; align-items: center; font-family: 'Open Sans', sans-serif;">
+		<nav class="nav-container" id="desktop-menu" style="display: flex; gap: 25px; flex: 1; justify-content: center; align-items: center; font-family: 'Open Sans', sans-serif;">
 			<a href="#" style="color: #fff; text-decoration: none; font-weight: 300; font-size: 16px; font-family: 'Open Sans', sans-serif;">HOME</a>
 			<a href="#" style="color: #fff; text-decoration: none; font-weight: 300; font-size: 16px; font-family: 'Open Sans', sans-serif;">SOBRE</a>
 			<a href="#" style="color: #fff; text-decoration: none; font-weight: 300; font-size: 16px; font-family: 'Open Sans', sans-serif;">PRODUTOS</a>
@@ -25,6 +25,19 @@
 			<a href="#" style="color: #fff; text-decoration: none; font-weight: 300; font-size: 16px; font-family: 'Open Sans', sans-serif;">CONTATO</a>
 			<a href="#" style="color: #fff; text-decoration: none; font-weight: 300; font-size: 16px; font-family: 'Open Sans', sans-serif;">ORÇAMENTO</a>
 		</nav>
+		<button id="hamburger-btn" aria-label="Abrir menu" class="hamburger-btn">☰</button>
+		<div id="mobile-menu-modal" class="mobile-menu-modal" role="dialog" aria-modal="true" aria-label="Menu mobil">
+			<div class="mobile-menu-content">
+				<button id="close-mobile-menu" class="close-mobile-menu" aria-label="Fechar menu">×</button>
+				<a href="#">HOME</a>
+				<a href="#">SOBRE</a>
+				<a href="#">PRODUTOS</a>
+				<a href="#">GALERIA</a>
+				<a href="#">BLOG</a>
+				<a href="#">CONTATO</a>
+				<a href="#">ORÇAMENTO</a>
+			</div>
+		</div>
 	</header>
 	<!-- /HEADER -->
 
@@ -273,4 +286,25 @@
 <!-- /FOOTER -->
 <a class="w-toplink active" href="#"><i class="fa fa-angle-up"></i></a>
 
+<script>
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenuModal = document.getElementById('mobile-menu-modal');
+  const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+  function openMobileMenu() {
+    mobileMenuModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobileMenuModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  hamburgerBtn.addEventListener('click', openMobileMenu);
+  closeMobileMenu.addEventListener('click', closeMenu);
+  mobileMenuModal.addEventListener('click', (e) => {
+    if (e.target === mobileMenuModal) closeMenu();
+  });
+</script>
 
