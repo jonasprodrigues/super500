@@ -116,7 +116,7 @@ body {
 .header-menu {
     display: none;
     width: 36px;
-    height: 26px;
+    height: 36px;
     cursor: pointer;
     z-index: 150;
     position: absolute;
