@@ -108,13 +108,26 @@ body {
 }
 
 /* Mobile menu */
-.hamburger-btn {
+.header-menu {
     display: none;
-    font-size: 26px;
-    color: #fff;
-    background: transparent;
-    border: none;
+    width: 36px;
+    height: 26px;
     cursor: pointer;
+    z-index: 150;
+}
+
+.header-menu-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-menu-icon div {
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
 }
 
 .mobile-menu-modal {
@@ -164,8 +177,12 @@ body {
         display: none !important;
     }
 
-    .hamburger-btn {
+    .header-menu {
         display: block;
+    }
+
+    .hamburger-btn {
+        display: none;
     }
 }
 
