@@ -214,3 +214,14 @@ body {
         text-align: center;
     }
 }
+
+@media (max-width: 480px) {
+  .nav-container {
+    gap: 10px; /* reduz a distância entre os links */
+    font-size: 14px; /* opcional: reduz também o tamanho da fonte para caber melhor */
+  }
+
+  .nav-container a {
+    font-size: 14px; /* garante que os links fiquem menores no mobile */
+  }
+}
