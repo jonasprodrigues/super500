@@ -40,13 +40,13 @@ body {
 
 @media (max-width: 768px) {
   .video-bg {
-    height: 75vh;  /* tablets menores ou telas grandes de celular */
+    height: 15vh;  /* tablets menores ou telas grandes de celular */
   }
 }
 
 @media (max-width: 480px) {
   .video-bg {
-    height: 50vh;  /* mobile pequeno */
+    height: 10vh;  /* mobile pequeno */
   }
 }
 
