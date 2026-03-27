@@ -71,7 +71,12 @@ body {
 
 .logo-container img {
     max-height: 120px;
+    width: auto;
+}
+
+.logo-container {
     width: 80%;
+    /*max-width: 80%;*/
 }
 
 .nav-container {
