@@ -45,10 +45,11 @@ body {
 /* Mobile pequeno */
 @media (max-width: 480px) {
   .video-bg {
-    height: 40vh;
+    height: 47vh;
   }
 
   .video-bg iframe {
+    top: 0;
     height: 40vh;
   }
 }
