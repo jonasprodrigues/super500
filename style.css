@@ -45,7 +45,7 @@ body {
 /* Mobile pequeno */
 @media (max-width: 480px) {
   .video-bg {
-    height: 50vh;
+    height: 40vh;
   }
 
   .video-bg iframe {
@@ -207,7 +207,7 @@ body {
 
     .custom-header {
         flex-direction: column;
-        height: 30vh;
+        height: 30vh !important;
         padding: 15px;
         gap: 15px;
         text-align: center;
