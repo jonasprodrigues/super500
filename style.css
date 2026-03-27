@@ -297,7 +297,7 @@ body {
 
     .custom-header {
         flex-direction: column;
-        height: 20vh !important;
+        height: 13vh !important;
         padding: 15px;
         gap: 15px;
         text-align: center;
