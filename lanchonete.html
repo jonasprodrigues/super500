@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUPER 500</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body style="margin: 0; padding: 0;">
+        <!-- HEADER -->
+        <header class="custom-header" style="display: flex; align-items: center; justify-content: space-between; height: 150px; background: #fff; padding: 0 30px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-weight: 300;">
+            <div class="logo-container" style="flex-shrink: 0;">
+                <img src="assets/logo.png" alt="SUPER 500" style="height: 120px; width: auto;">
+            </div>
+            <nav class="nav-container" id="desktop-menu" style="display: flex; gap: 25px; flex: 1; justify-content: center; align-items: center; font-family: 'Open Sans', sans-serif;">
+                <a href="#" style="color:#017139; text-decoration: none; font-weight: 800; font-size: 20px; font-family: 'Open Sans', sans-serif;">HOME</a>
+                <a href="#" style="color: #017139; text-decoration: none; font-weight: 800; font-size: 20px; font-family: 'Open Sans', sans-serif;">POSTO</a>
+                <a href="#" style="color: #017139; text-decoration: none; font-weight: 800; font-size: 20px; font-family: 'Open Sans', sans-serif;">RESTAURANTE</a>
+                <a href="#" style="color: #017139; text-decoration: none; font-weight: 800; font-size: 20px; font-family: 'Open Sans', sans-serif;">CONVENIÊNCIA</a>
+                <a href="#" style="color: #017139; text-decoration: none; font-weight: 800; font-size: 20px; font-family: 'Open Sans', sans-serif;">BORRACHARIA</a>
+                <a href="#" style="color: #017139; text-decoration: none; font-weight: 800; font-size: 20px; font-family: 'Open Sans', sans-serif;">MERCADO</a>
+                <a href="./contato.html" style="color: #017139; text-decoration: none; font-weight: 800; font-size: 20px; font-family: 'Open Sans', sans-serif;">CONTATO</a>
+            </nav>
+            <div class="header-menu" id="hamburger-btn" data-target="#nav" data-toggle="" aria-label="Abrir menu" role="button">
+                <div class="header-menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="mobile-menu-modal" class="mobile-menu-modal" role="dialog" aria-modal="true" aria-label="Menu mobil">
+                <div class="mobile-menu-content">
+                    <button id="close-mobile-menu" class="close-mobile-menu" aria-label="Fechar menu">—</button>
+                        <a href="#" style="color: #fff; text-decoration: none; font-weight: 300; font-size: 16px; font-family: 'Open Sans', sans-serif;">HOME</a>
+                <a href="#" >POSTO</a>
+                <a href="#" >RESTAURANTE</a>
+                <a href="#" >CONVENIÊNCIA</a>
+                <a href="#" >BORRACHARIA</a>
+                <a href="#" >MERCADO</a>
+                <a href="#" >CONTATO</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- TITULO -->
+        <div class="" style="display: flex; align-items: center; justify-content: center; height: 150px; background: linear-gradient(to bottom, #00cc66 0%, #017139 30%, #017139 100%); padding: 0 0px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-weight: 800;">
+            <h1 style="justify-self: center; color: #fff; font-size: 50px;">LANCHONETE</h1>
+        </div>
+
+        <!-- hero -->
+        <div style="display: flex; justify-content: center; margin-top: -30px; width: 100vw;">
+            
+            <img 
+                src="https://www.dropbox.com/scl/fi/10lq8fs9b6v4oilnyp1qs/2-Super-500-0088.jpg?rlkey=9m3wolytbn5j0hl5yucbi3ebf&st=khyqm37k&raw=1"
+                alt="Localização"
+                style="width: 100%; max-width: 1600px; height: auto; margin: 30px 0; border: 0;"
+            >
+
+        </div>
+
+                
+        <!-- FOTOS -->
+        <div class="new-portfolio-row" id="produtos"></div>
+        <script>
+            const container = document.getElementById("produtos");
+
+            // base do link (ANTES do número)
+            const baseUrl = "https://www.dropbox.com/scl/fi/10lq8fs9b6v4oilnyp1qs/2-Super-500-";
+
+            // parte final do link
+            const endUrl = ".jpg?rlkey=9m3wolytbn5j0hl5yucbi3ebf&st=khyqm37k&raw=1";
+
+            // loop de 0052 até 0173
+            for (let i = 52; i <= 173; i++) {
+
+                // adiciona zeros à esquerda (0052, 0053...)
+                let numero = i.toString().padStart(4, '0');
+
+                let article = document.createElement("article");
+                article.className = "new-portfolio-product";
+
+                article.innerHTML = `
+                    <img src="${baseUrl}${numero}${endUrl}" alt="Produto ${numero}">
+                `;
+
+                container.appendChild(article);
+            }
+            </script>
+
+        
+        <!-- FOOTER -->
+        <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+            <img src="assets/logo.png" alt="SUPER 500" class="footer-logo">
+            <p>SUPER 500 - Parceria, Qualidade e Atendimento.</p>
+            </div>
+            <div class="footer-col">
+            <h3>Contato</h3>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/550000000000" target="_blank">(00) 00000-0000</a></p>
+            <p><strong>Telefone:</strong> (00) 0000-0000</p>
+            <p><strong>Email:</strong> <a href="mailto:contato@super500.com.br">contato@super500.com.br</a></p>
+            </div>
+            <div class="footer-col">
+            <h3>Endereço</h3>
+            <p>BR 277 - KM 496<br>Guaraniaçu - PR</p>
+            <div class="footer-socials">
+                <a href="#" target="_blank" aria-label="Facebook">FB</a>
+                <a href="#" target="_blank" aria-label="Instagram">IG</a>
+                <a href="#" target="_blank" aria-label="WhatsApp">WA</a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© SUPER 500 2026 - Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <a href="https://www.jonaspereira.com.br" target="_blank">
+                Feito com carinho pela &lt;COD&amp;DEV&gt;
+                </a>
+            </nav>
+        </div>
+        </footer>
+        <a class="w-toplink active" href="#"><i class="fa fa-angle-up"></i></a>
+
+        <!-- MENU MOBILE HAMBURGUER -->
+        <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenuModal = document.getElementById('mobile-menu-modal');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        function openMobileMenu() {
+            mobileMenuModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileMenuModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMenu);
+        mobileMenuModal.addEventListener('click', (e) => {
+            if (e.target === mobileMenuModal) closeMenu();
+        });
+        </script>
+
+    </body>
+</html>
