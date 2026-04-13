@@ -29,18 +29,68 @@
                     <div></div>
                 </div>
             </div>
-            <div id="mobile-menu-modal" class="mobile-menu-modal" role="dialog" aria-modal="true" aria-label="Menu mobil">
+
+<div id="mobile-menu-modal" class="mobile-menu-modal" role="dialog" aria-modal="true" aria-label="Menu mobil">
                 <div class="mobile-menu-content">
-                    <button id="close-mobile-menu" class="close-mobile-menu" aria-label="Fechar menu">—</button>
-                        <a href="#" style="color: #fff; text-decoration: none; font-weight: 300; font-size: 16px; font-family: 'Open Sans', sans-serif;">HOME</a>
-                <a href="#" >POSTO</a>
-                <a href="#" >RESTAURANTE</a>
-                <a href="#" >CONVENIÊNCIA</a>
-                <a href="#" >PADARIA</a>
-                <a href="#" >MERCADO</a>
-                <a href="#" >CONTATO</a>
+                    <button id="close-mobile-menu" class="close-mobile-menu" aria-label="Fechar menu">X</button>
+                    <h2 style="color: #017139; font-family: 'Open Sans', sans-serif; font-weight: 800; margin-bottom: 30px;">Menu</h2>
+                    
+                    <!-- HOME -->
+                    <a href="./index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955a.75.75 0 011.061 0L21.75 12M4.5 10.5v9a.75.75 0 00.75.75h4.5v-6h4.5v6h4.5a.75.75 0 00.75-.75v-9" />
+                        </svg>
+                        HOME
+                    </a>
+
+                    <!-- CONVENIÊNCIA -->
+                    <a href="./conveniencia.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                        </svg>
+                        CONVENIÊNCIA
+                    </a>
+
+                    <!-- PADARIA -->
+                    <a href="./padaria.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8 6h8a3 3 0 0 1 0 6h-1v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a2 2 0 0 1 2-2h2Zm8 2h1a2 2 0 1 1 0 4h-1M8 2v2M12 2v2M16 2v2" />
+                        </svg>
+                        PADARIA
+                    </a>
+
+                    <!-- MERCADO -->
+                    <a href="./mercado.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386a.75.75 0 01.728.568l.482 1.93M7.5 14.25h9.75m0 0l1.5-6H6.228m10.272 6l-.6 3H8.1l-.6-3m0 0H5.25" />
+                        </svg>
+                        MERCADO
+                    </a>
+
+                    <!-- LANCHONETE -->
+                    <a href="./lanchonete.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4 10c0-2 2-4 8-4s8 2 8 4M4 12h16M6 15h12M5 18h14" />
+                        </svg>
+                        LANCHONETE
+                    </a>
+
+                    <!-- CONTATO -->
+                    <a href="./contato.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                        </svg>
+                        CONTATO
+                    </a>
                 </div>
             </div>
+            
         </header>
         
         <!-- TITULO -->
