@@ -960,16 +960,17 @@ justify-content: flex-end; /* centraliza todo o conteúdo horizontalmente */
 
 /* Telas grandes */
 @media (min-width: 1400px) {
-  .new-portfolio-row-lanchonete {
+  .new-portfolio-row {
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 100px;
   }
 }
 
 /* Ajuste das imagens */
-.new-portfolio-card-lanchonete img {
+.new-portfolio-card img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
   display: block;
+  object-position: 50% 0%;
 }
