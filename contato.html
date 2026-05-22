@@ -60,7 +60,7 @@
 
                 
         <!-- CONTATO-->
-        <div class="contato">
+        <div class="contato flex flex-col md:flex-row items-center gap-10 max-w-7xl w-full px-4 md:px-8">
             <section class="contact-info">
                 <div class="container">
                     <h1>Redes Sociais</h1>
@@ -128,8 +128,7 @@
             </section>
             <div class="contact-form">
                 <section id="formulario" class="flex justify-center">
-                    <div class="flex flex-col max-w-7xl mx-auto px-2 md:px-6 w-full items-center">
-
+                    <div class="flex flex-col max-w-7xl mx-0 px-0 md:px-6 w-full items-center">
                         <!-- Título -->
                         <h2 class="text-2xl md:text-2xl font-extrabold mb-14 md:w-[600px] text-center">
                             Preencha o formulário e você receberá o contato da nossa equipe
@@ -170,20 +169,7 @@
                                                 class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none">
                                         </div>
 
-                                        <!-- Serviço -->
-                                        <div class="mb-4">
-                                            <label for="servico" class="block mb-1 font-medium text-white">Tipo de Serviço</label>
-                                            <select id="servico" name="service_type" required
-                                                class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none">
-                                                <option value="">Selecione um serviço</option>
-                                                <option value="landing_page">Landing Page</option>
-                                                <option value="site_institucional">Site Institucional</option>
-                                                <option value="ecommerce">E-commerce</option>
-                                                <option value="integracao_pix">Integração Pix</option>
-                                                <option value="outro">Outro</option>
-                                            </select>
-                                        </div>
-
+                                    
                                         <!-- Mensagem -->
                                         <div class="mb-4">
                                             <label for="mensagem" class="block mb-1 font-medium text-white">Mensagem</label>
@@ -255,6 +241,7 @@
             });
         </script>
 
+<!-- 
         <script>
 fetch('/header2.html')
     .then(res => res.text())
@@ -300,6 +287,6 @@ fetch('/header2.html')
         });
     });
 </script>
-
+ -->
     </body>
 </html>
