@@ -255,11 +255,30 @@
             });
         </script>
 
-        <!-- MENU MOBILE HAMBURGUER -->
         <script>
+fetch('/header2.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+
         const hamburgerBtn = document.getElementById('hamburger-btn');
         const mobileMenuModal = document.getElementById('mobile-menu-modal');
         const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenuContent = document.querySelector('.mobile-menu-content');
+
+        // CENTRALIZAR NO MOBILE
+        // CENTRALIZAR NO MOBILE
+        if (window.innerWidth <= 768) {
+
+            mobileMenuModal.style.justifyContent = 'center';
+            mobileMenuModal.style.alignItems = 'center';
+
+            mobileMenuContent.style.position = 'relative';
+            mobileMenuContent.style.top = '0';
+            mobileMenuContent.style.right = '0';
+            mobileMenuContent.style.left = '0';
+            mobileMenuContent.style.margin = 'auto';
+        }
 
         function openMobileMenu() {
             mobileMenuModal.classList.add('active');
@@ -273,10 +292,14 @@
 
         hamburgerBtn.addEventListener('click', openMobileMenu);
         closeMobileMenu.addEventListener('click', closeMenu);
+
         mobileMenuModal.addEventListener('click', (e) => {
-            if (e.target === mobileMenuModal) closeMenu();
+            if (e.target === mobileMenuModal) {
+                closeMenu();
+            }
         });
-        </script>
+    });
+</script>
 
     </body>
 </html>
