@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUPER 500</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body style="margin: 0; padding: 0;">
+     
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <script>
+    fetch('/header2.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>        
+
+        <!-- TITULO -->
+        <div class="" style="display: flex; align-items: center; justify-content: center; height: 150px; background: linear-gradient(to bottom, #00cc66 0%, #017139 30%, #017139 100%); padding: 0 0px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-weight: 800;">
+            <h1 style="justify-self: center; color: #fff; font-size: 50px;">POSTO DE COMBUSTÍVEL</h1>
+        </div>
+
+        <!-- hero -->
+        <div style="display: flex; justify-content: center; margin-top: -30px; width: 100vw;">
+            
+            <img 
+                src="./assets/POSTO.jpg"
+                alt="Localização"
+                style="width: 100%; max-width: 1600px; height: auto; margin: 30px 0; border: 0;"
+            >
+
+        </div>
+
+                
+        <!-- FOTOS -->
+        <div class="l-submain-h g-html i-cf">
+            <div class="g-cols wpb_row offset_default">
+                <div class="full-width">
+                    <h1 style="justify-self: center; color: #017139; margin-bottom: 50px; font-size: 50px;">NOSSO RESTAURANTE</h1>
+                <div class="new-portfolio-grid">
+                    <div class="new-portfolio-row-lanchonete">
+
+                        <article class="new-portfolio-card-posto">
+                            <img src="assets/posto/0006.jpg" loading="lazy" alt="Posto">
+                        </article>
+
+                        <article class="new-portfolio-card-posto">
+                            <img src="assets/posto/0015.jpg" loading="lazy" alt="Posto">
+                        </article>
+
+                        <article class="new-portfolio-card-posto">
+                            <img src="assets/posto/0016.jpg" loading="lazy" alt="Posto">
+                        </article>
+
+                        <article class="new-portfolio-card-posto">
+                            <img src="assets/posto/0017.jpg" loading="lazy" alt="Posto">
+                        </article>
+
+                    </div>               
+                </div>
+            </div>
+        </div>
+                
+
+  <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <script>
+    fetch('/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+
+
+    <!-- MENU MOBILE HAMBURGUER -->
+        <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenuModal = document.getElementById('mobile-menu-modal');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        function openMobileMenu() {
+            mobileMenuModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileMenuModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMenu);
+        mobileMenuModal.addEventListener('click', (e) => {
+            if (e.target === mobileMenuModal) closeMenu();
+        });
+        </script>
+
+    </body>
+</html>

@@ -193,46 +193,17 @@
             </div>
         </div>
                 
-        <!-- FOOTER -->
-        <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-col">
-            <img src="assets/logo.png" alt="SUPER 500" class="footer-logo">
-            <p>SUPER 500 - Parceria, Qualidade e Atendimento.</p>
-            </div>
-            <div class="footer-col">
-                <h3>Contato</h3>
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/554598544438" target="_blank">(45) 9854-4438</a></p>
-                <p><strong>Telefone:</strong> (45) 3232-1482</p>
-                <p><strong>Email:</strong> <a href="mailto:contato@super500.com.br">contato@super500.com.br</a></p>
-            </div>
-            <div class="footer-col">
-                <h3>Endereço</h3>
-                <p>BR 277 - KM 496<br>Guaraniaçu - PR</p>
-                <div class="footer-socials">
-                    <a href="#" target="_blank" aria-label="Facebook">FB</a>
-                    <a href="#" target="_blank" aria-label="Instagram">IG</a>
-                    <a href="#" target="_blank" aria-label="WhatsApp">WA</a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Horários de atendimento:</h3>
-                <p><strong>Açougue e mercado:</strong></p><p style="font-size: 10px;"> Seg a Sab das 6h às 20h e aos Domingos das 6h às 12h.</p>
-                <p><strong>Auto Posto:</strong></p><p style="font-size: 10px;"> Seg a Sab 5h30 às 22h e aos Domingos 6h30 às 20h.</p>
-                <p><strong>Restaurante:</strong></p><p style="font-size: 10px;"> Seg a Sab 11h às 15h, 18h às 23h, e aos Domingos fechado.</p>
-            </div>
 
-        </div>
-        <div class="footer-bottom">
-            <p>© SUPER 500 2026 - Todos os direitos reservados.</p>
-            <nav class="footer-nav">
-                <a href="https://www.jonaspereira.com.br" target="_blank">
-                Feito com carinho pela &lt;COD&amp;DEV&gt;
-                </a>
-            </nav>
-        </div>
-        </footer>
-        <a class="w-toplink active" href="#"><i class="fa fa-angle-up"></i></a>
+        <!-- FOOTER -->
+        <div id="footer"></div>
+
+        <script>
+        fetch('/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+        </script>
 
         <!-- MENU MOBILE HAMBURGUER -->
         <script>

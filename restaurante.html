@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SUPER 500</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body style="margin: 0; padding: 0;">
+     
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <script>
+    fetch('/header2.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>        
+
+        <!-- TITULO -->
+        <div class="" style="display: flex; align-items: center; justify-content: center; height: 150px; background: linear-gradient(to bottom, #00cc66 0%, #017139 30%, #017139 100%); padding: 0 0px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-weight: 800;">
+            <h1 style="justify-self: center; color: #fff; font-size: 50px;">RESTAURANTE</h1>
+        </div>
+
+        <!-- hero -->
+        <div style="display: flex; justify-content: center; margin-top: -30px; width: 100vw;">
+            
+            <img 
+                src="./assets/RESTAURANTE.jpg"
+                alt="Localização"
+                style="width: 100%; max-width: 1600px; height: auto; margin: 30px 0; border: 0;"
+            >
+
+        </div>
+
+                
+        <!-- FOTOS -->
+        <div class="l-submain-h g-html i-cf">
+            <div class="g-cols wpb_row offset_default">
+                <div class="full-width">
+                    <h1 style="justify-self: center; color: #017139; margin-bottom: 50px; font-size: 50px;">NOSSO RESTAURANTE</h1>
+                <div class="new-portfolio-grid">
+                    <div class="new-portfolio-row-lanchonete">
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/475891978_18054697193086754_3219059302254289540_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/476001313_18054697184086754_8304391419372269140_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/499604694_18064542050086754_3122620093281644964_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/538945581_18074152778086754_2617231268367391435_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/540272233_18074152769086754_6315268345642662377_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/641768366_18092769659086754_6608866666021101498_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/642225018_18092769677086754_6404784212839641897_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/643597097_18092769668086754_2071931798129256817_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/645609198_18092769692086754_4399027647770627227_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/651894340_18004198976886764_2635608758673332799_n.jpeg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/655601555_18124118566598791_5543790709876436349_n.jpeg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/655967469_18065699663338529_9086506367964877741_n.jpeg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/656291246_18353162482232122_4916013521442953921_n.jpeg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/656733248_18068937197271448_4911495250546203973_n.jpeg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/657415458_18096275084086754_217091679321XX6693843_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/658910109_18584391679000800_6725214049893565243_n.jpeg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                        <article class="new-portfolio-card-restaurante">
+                            <img src="assets/restaurante/672957034_18097735586086754_5126309224959289938_n.jpg" loading="lazy" alt="Restaurante">
+                        </article>
+
+                    </div>                
+                </div>
+            </div>
+        </div>
+                
+
+  <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <script>
+    fetch('/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+
+
+    <!-- MENU MOBILE HAMBURGUER -->
+        <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenuModal = document.getElementById('mobile-menu-modal');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        function openMobileMenu() {
+            mobileMenuModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileMenuModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMenu);
+        mobileMenuModal.addEventListener('click', (e) => {
+            if (e.target === mobileMenuModal) closeMenu();
+        });
+        </script>
+
+    </body>
+</html>
