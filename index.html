@@ -16,11 +16,36 @@
     <!-- HEADER -->
     <div id="header"></div>
 
+    <!-- MENU MOBILE HAMBURGUER -->
     <script>
     fetch('/header.html')
         .then(res => res.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
+
+            // AGORA os elementos existem
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenuModal = document.getElementById('mobile-menu-modal');
+            const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+            function openMobileMenu() {
+                mobileMenuModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                mobileMenuModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            hamburgerBtn.addEventListener('click', openMobileMenu);
+            closeMobileMenu.addEventListener('click', closeMenu);
+
+            mobileMenuModal.addEventListener('click', (e) => {
+                if (e.target === mobileMenuModal) {
+                    closeMenu();
+                }
+            });
         });
     </script>
 
