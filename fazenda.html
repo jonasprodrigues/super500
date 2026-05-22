@@ -13,13 +13,38 @@
     <!-- HEADER -->
     <div id="header"></div>
 
-    <script>
-    fetch('/header2.html')
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-        });
-    </script>        
+        <!-- MENU MOBILE HAMBURGUER -->
+        <script>
+        fetch('/header2.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                // AGORA os elementos existem
+                const hamburgerBtn = document.getElementById('hamburger-btn');
+                const mobileMenuModal = document.getElementById('mobile-menu-modal');
+                const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+                function openMobileMenu() {
+                    mobileMenuModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function closeMenu() {
+                    mobileMenuModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+
+                hamburgerBtn.addEventListener('click', openMobileMenu);
+                closeMobileMenu.addEventListener('click', closeMenu);
+
+                mobileMenuModal.addEventListener('click', (e) => {
+                    if (e.target === mobileMenuModal) {
+                        closeMenu();
+                    }
+                });
+            });
+        </script>
 
         <!-- TITULO -->
         <div class="" style="display: flex; align-items: center; justify-content: center; height: 150px; background: linear-gradient(to bottom, #00cc66 0%, #017139 30%, #017139 100%); padding: 0 0px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-weight: 800;">
